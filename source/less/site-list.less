@@ -1,16 +1,23 @@
 .site-list {
   .reset-style();
+<<<<<<< HEAD
   display: none;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
+=======
+}
+
+@media(min-width: @tablet-width) {
+>>>>>>> f42c3d2... Сверстал адаптивные сетки крупных блоков для всех состояний: мобильного,планшетного и десктопного
   .site-list {
     display: flex;
     justify-content: flex-end;
     font-size: 18px;
     line-height: 25px;
   }
+<<<<<<< HEAD
 
   .site-list__link {
     color: #000000;
@@ -28,5 +35,18 @@
 
   .site-list__link--index {
     color: #000000;
+=======
+  .site-list__link {
+    color: #000000;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .site-list {
+    font-size: 20px;
+  }
+  .site-list__link--index {
+    color: #ffffff;
+>>>>>>> f42c3d2... Сверстал адаптивные сетки крупных блоков для всех состояний: мобильного,планшетного и десктопного
   }
 }

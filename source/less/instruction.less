@@ -9,3 +9,14 @@
 .instruction__text {
   font-family: "Aria", sans-serif;
 }
+
+@media(min-width: @tablet-width) {
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .instruction__item {
+    width: 300px;
+  }
+}

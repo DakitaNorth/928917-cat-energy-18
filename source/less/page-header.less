@@ -2,7 +2,24 @@
   background-color: #ffffff;
 }
 
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+}
+
 .page-header__button svg {
   width: 24px;
   height: 18px;
+}
+
+@media(min-width: @tablet-width) {
+  .page-header--container {
+    display: flex;
+    align-items: center;
+  }
+  .page-header__button {
+    display: none;
+  }
 }

@@ -1,9 +1,15 @@
 .page-footer {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.page-footer__social-list {
-  .reset-style();
+.page-footer__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__copyright h3 {
@@ -13,8 +19,24 @@
   font-weight: 400;
 }
 
+.page-footer__copyright-logo {
+  height: 34px;
+}
+
 .page-footer__copyright-logo svg {
   width: 27px;
   height: 34px;
   fill: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer__wrapper {
+    width: auto;
+    justify-content: flex-end;
+  }
 }

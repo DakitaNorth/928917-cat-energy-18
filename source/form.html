@@ -37,6 +37,61 @@
       </div>
     </header>
     <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <section class="selection">
+        <p class="selection__text">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <form class="selection__form fields" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="fields__set">
+            <label for="cat-name">Имя*</label>
+            <input class="fields__set__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            <label for="cat-weight">Вес (кг):*</label>
+            <input class="fields__set__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+            <label for="cat-years">Возраст (лет):</label>
+            <input class="fields__set__input" type="text" name="cat-years" id="cat-years" placeholder="7">
+          </fieldset>
+          <fieldset class="fields__set form-programs">
+            <input class="form-programs__radio" type="radio" id="losing-weight" name="losing-weight" value="losing-weight" checked></input>
+            <label for="losing-weight" class="form-programs__label">Похудение</label>
+            <input class="form-programs__radio" type="radio" id="mass-set" name="mass-set" value="mass-set"></input>
+            <label for="mass-set" class="form-programs__label">Набор массы</label>
+            <input class="form-programs__radio" type="radio" id="recommendation" name="recommendation" value="recommendation"></input>
+            <label for="recommendation" class="form-programs__label">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="fields__set contact-details">
+            <legend>Контактные данные(владельца кота)</legend>
+            <label for="email">E-mail:*</label>
+            <input class="fields__set__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <label for="phone">Телефон:*</label>
+            <input class="fields__set__input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+          </fieldset>
+          <div class="fields__set comments">
+            <label for="comment">Комментарий</label>
+            <textarea class="comment__area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота">
+            </textarea>
+          </div>
+          <fieldset class="fields__set form-additionally">
+            <legend>Дополнительно</legend>
+            <input class="form-additionally__checkbox" type="checkbox" id="substitute" name="substitute" checked>
+            <label for="substitute" class="form-additionally__label">Сахарозаменитель</label>
+            <input class="form-additionally__checkbox" type="checkbox" id="water" name="water">
+            <label for="water" class="form-additionally__label">Питьевая вода</label>
+            <input class="form-additionally__checkbox" type="checkbox" id="milk" name="milk">
+            <label for="milk" class="form-additionally__label">Молоко</label>
+            <input class="form-additionally__checkbox" type="checkbox" id="vitamin" name="vitamin">
+            <label for="vitamin" class="form-additionally__label">Витамины</label>
+          </fieldset>
+          <button class="fields__button button" type="submit">Отправить заявку</button>
+          <span class="fields__postScript text">* — Обязательные поля</span>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__text text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="visually-hidden">Карта проезда к магазину</h2>
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="363" alt="Карта проезда к магазину Cat-Energy по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </section>
     </main>
     <footer class="page-footer container">
       <a class="page-footer__title">

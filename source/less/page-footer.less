@@ -1,8 +1,13 @@
 .page-footer {
-  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 39px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__title {
+  margin-bottom: 31px;
 }
 
 .page-footer__wrapper {
@@ -33,10 +38,23 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 58px;
   }
 
   .page-footer__wrapper {
     width: auto;
     justify-content: flex-end;
+    flex-shrink: 0;
+  }
+
+  .page-footer__title {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .page-footer__copyright-logo svg {
+    margin-left: 23px;
   }
 }

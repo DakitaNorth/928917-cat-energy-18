@@ -1,5 +1,7 @@
 .site-list {
   .reset-style();
+  display: none;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,6 +15,10 @@
   .site-list__link {
     color: #000000;
   }
+
+  .site-list__item {
+    margin-left: 35px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -21,6 +27,6 @@
   }
 
   .site-list__link--index {
-    color: #ffffff;
+    color: #000000;
   }
 }

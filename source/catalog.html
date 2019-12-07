@@ -6,12 +6,13 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header--container container">
+  <body class="inner-page">
+    <header class="page-header inner-page__header">
+      <div class="page-header__container container">
         <div class="page-header__wrapper">
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип проекта Кэт энерджи">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип проекта Кэт энерджи">
+            <img class="page-header__title-image" src="img/logo-footer.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
           <button class="page-header__button" type="button">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" xml:space="preserve">
@@ -24,27 +25,27 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
+              <a class="site-list__link site-list__link--index" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item  site-list__item--active">
-              <a class="site-list__link">Каталог продукции</a>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__link--index">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="page-main container">
-      <h1 class="page-main__title">Каталог продукции</h1>
+    <main class="page-main">
+      <h1 class="page-main__title title container">Каталог продукции</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Секция каталога товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-item">
             <div class="catalog-item__wrapper">
               <a class="catalog-item__image" href="#">
-                <img class="catalog-item__image-img" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Фото продукта">
+                <img class="catalog-item__image-img" src="img/chicken-small-mobile@1x.jpg" width="140" height="140" alt="Фото продукта">
               </a>
               <div class="catalog-item__description">
                 <a class="catalog-item__header" href="#">Cat Energy PRO 500 г</a>
@@ -176,7 +177,7 @@
                 <table class="catalog-item__options text">
                   <tr>
                     <td class="catalog-item__volume catalog-item__volume--title">Объем</td>
-                    <td class="catalog-item__volume catalog-item__volume--value">500г</td>
+                    <td class="catalog-item__volume catalog-item__volume--value">1000г</td>
                   </tr>
                   <tr>
                     <td class="catalog-item__taste catalog-item__taste--title">Вкус</td>
@@ -216,8 +217,12 @@
             </div>
             <a class="catalog-item__link button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog-list__item catalog-item catalog-item--more">
             <div class="catalog__footer">
+              <svg class="catalog__plus" x="0px" y="0px" viewBox="0 0 60 60">
+                <polygon class="st0" points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5
+                60,30.5 "/>
+              </svg>
               <h3 class="catalog__title">Показать еще 100500 товаров</h3>
               <p class="catalog__text text">На самом деле вкусов гораздо больше!</p>
               <a class="catalog__button button" href="#">Показать все</a>
@@ -225,7 +230,7 @@
           </li>
         </ul>
       </section>
-      <section class="additional-goods">
+      <section class="additional-goods  container">
         <h2 class="additional-goods__title">Дополнительные товары</h2>
         <ul class="additional-goods__list">
           <li class="additional-goods__item additional-good">
@@ -311,7 +316,7 @@
       </section>
     </main>
     <footer class="page-footer container">
-      <a class="page-footer__title" href='index.html'>
+      <a class="page-footer__title" href="index.html">
         <img class="page-footer__title-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
       <ul class="page-footer__social-list social-list">
@@ -349,8 +354,8 @@
             </svg>
           </a>
         </li>
-        <li class="social-list__item--third">
-          <a class="social-list__link" href="#">
+        <li class="social-list__item">
+          <a class="social-list__link--third" href="#">
             <h3 class="visually-hidden">Фейсбук</h3>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
@@ -367,8 +372,11 @@
         </a>
         <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          <svg x="0px" y="0px" viewBox="0 0 39.6 50.4">
+            <path class="st0" d="M20,0.2h-0.2L0.1,2.3v36.2l19.7,11.7l19.7-11.7V2.3C39.5,2.3,20,0.2,20,0.2z M37,37L19.8,47.2L2.6,37V22.2
+              l17.1,10.2v1.8L8,27.2V29l11.8,7.1V38L8,31v1.8l11.8,7l11.9-7.1v-7.6l5.3-3.2V37z M36.9,20l-4.7,2.8L30,24.1L19.7,18v1.8l8.8,5.3
+              h-0.1l-0.2,0.1l-1.3,0.7l-7.3-4.3v1.8l5.8,3.4L24,27.7l-4.3-2.6v1.8l2.9,1.7l-2.9,1.7l-17-10.1l17-10.2C19.7,10,36.9,20,36.9,20z
+              M37,18.2L19.7,8L2.6,18.2V4.6l17.2-1.8L37,4.6C37,4.6,37,18.2,37,18.2z"/>
           </svg>
         </a>
       </div>

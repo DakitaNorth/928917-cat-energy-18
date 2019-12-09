@@ -1,5 +1,7 @@
 .catalog-list {
   .reset-style();
+  padding-top: 5px;
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: @tablet-width) {
@@ -7,5 +9,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-list {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

@@ -1,0 +1,81 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.comments label {
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.comments label::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  width: 158px;
+  height: 3px;
+  background-color: #68b738;
+}
+
+.comment__area {
+  height: 145px;
+  border-color: #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  .comments {
+    margin-bottom: 65px;
+  }
+
+  .comments label {
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comments label::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -70px;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  .comments label::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: -70px;
+    width: 479px;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  .comment__area {
+    height: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments label::before {
+    top: 21px;
+    left: -110px;
+    width: 70px;
+    height: 3px;
+  }
+
+  .comments label::after {
+    top: 21px;
+    right: -110px;
+    width: 1111px;
+    height: 3px;
+  }
+}

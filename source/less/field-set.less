@@ -6,18 +6,61 @@
   border: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 }
 
 .field-set legend {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: none;
 }
 
 .field-set__input::placeholder {
+  color: #111111;
+}
+
+.field-set__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.field-set__label {
+  flex-shrink: 0;
+  max-width: 35%;
+}
+
+.field-set__input {
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-bottom: 12px;
+  margin-left: 15px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  border: 1px solid #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  .field-set {
+    margin-bottom: 57px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-set__input {
+    padding-left: 18px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-set legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

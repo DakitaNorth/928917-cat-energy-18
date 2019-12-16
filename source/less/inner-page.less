@@ -2,10 +2,29 @@
   .inner-page__header {
     border-bottom: 1px solid #d9d9d9;
   }
+
+  .inner-page__contacts {
+    padding-top: 15px;
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .inner-page__header {
     border-bottom: 0;
+  }
+
+  .inner-page__contacts {
+    padding-top: 0;
+  }
+
+  .inner-page__title {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-page__contacts {
+    background-color: #ffffff;
   }
 }

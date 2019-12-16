@@ -48,10 +48,27 @@
 }
 
 .programs__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 98px;
+  width: 24px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.programs__link--pro::after {
+  left: 100px;
 }
 
 .programs__item::before {
@@ -132,6 +149,15 @@
     line-height: 20px;
   }
 
+  .programs__link::after {
+    top: 10px;
+    left: 130px;
+  }
+
+  .programs__link--pro::after {
+    left: 125px;
+  }
+
   .programs__item::before {
     top: 90px;
     left: 445px;
@@ -180,8 +206,8 @@
 
   .programs__text {
     width: auto;
-    margin-top: 75px;
-    margin-bottom: 27px;
+    margin-top: 73px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
   }

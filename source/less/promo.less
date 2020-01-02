@@ -71,7 +71,11 @@
   }
 
   .promo__image {
-    display: none;
+    position: absolute;
+    z-index: -2;
+    bottom: -60px;
+    left: 30px;
+    margin: 0;
   }
 
   .promo {
@@ -87,19 +91,13 @@
     padding-right: 80px;
   }
 
-  .promo__image--tablet {
-    display: none;
-  }
-
-  .promo__image--desktop {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 350px;
-    z-index: 1;
-  }
-
   .promo {
     height: 585px;
+  }
+
+  .promo__image {
+    top: 145px;
+    left: 560px;
+    margin: 0;
   }
 }

@@ -28,13 +28,13 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--index" href="index.html">Главная</a>
+              <a class="site-list__link inner-page__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link inner-page__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--index">Подбор программы</a>
+              <a class="site-list__link inner-page__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -122,7 +122,7 @@
           </div>
         </form>
       </section>
-      <section class="contacts inner-page__contacts">
+      <section class="inner-page__contacts contacts">
         <div class="contacts__wrapper container">
           <h2 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <address class="contacts__text text">
@@ -131,7 +131,9 @@
           </address>
         </div>
         <h2 class="visually-hidden">Карта проезда к магазину</h2>
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта проезда к магазину Cat-Energy по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <div class="contacts__map" aria-label="Большая Конюшенная ул., 19 Санкт-Петербург(координаты 59.938805, 30.323094)">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412409!2d30.32089461622237!3d59.938796869047735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1570983080798!5m2!1sru!2sru"></iframe>
+        </div>
       </section>
     </main>
     <footer class="page-footer container">

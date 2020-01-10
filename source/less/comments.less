@@ -4,7 +4,7 @@
   margin-bottom: 28px;
 }
 
-.comments label {
+.comments__title-wrapper {
   position: relative;
   margin-bottom: 35px;
   font-size: 24px;
@@ -13,69 +13,78 @@
   text-transform: none;
 }
 
-.comments label::after {
+.comments__title {
+  display: inline-block;
+  padding-left: 37px;
+  padding-right: 25px;
+  margin-left: -39px;
+  background-color: #ffffff;
+}
+
+.comments__title-wrapper::before {
   content: "";
   position: absolute;
-  top: 15px;
-  right: -20px;
-  width: 158px;
+  top: 50%;
+  right: 0;
+  width: 100vw;
   height: 3px;
+  margin-top: 1px;
   background-color: #68b738;
+  z-index: -1;
 }
 
 .comment__area {
-  height: 145px;
+  width: 260px;
+  height: 130px;
+  padding-top: 15px;
+  padding-left: 15px;
   border-color: #e6e6e6;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  resize: none;
 }
 
 @media (min-width: @tablet-width) {
   .comments {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
-  .comments label {
-    margin-bottom: 75px;
+  .comments__title-wrapper {
+    margin-bottom: 77px;
+  }
+
+  .comments__title {
+    padding-right: 40px;
+    margin-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
-  .comments label::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: -70px;
-    width: 30px;
-    height: 3px;
-    background-color: #68b738;
-  }
-
-  .comments label::after {
-    content: "";
-    position: absolute;
-    top: 22px;
-    right: -70px;
-    width: 479px;
-    height: 3px;
-    background-color: #68b738;
+  .comments__title-wrapper::before {
+    margin-top: 3px;
   }
 
   .comment__area {
-    height: 170px;
+    width: 610px;
+    height: 155px;
+    margin-left: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .comments label::before {
-    top: 21px;
-    left: -110px;
-    width: 70px;
-    height: 3px;
+  .comments {
+    margin-bottom: 65px;
   }
 
-  .comments label::after {
-    top: 21px;
-    right: -110px;
-    width: 1111px;
-    height: 3px;
+  .comment__area {
+    width: 1220px;
+    margin-left: 0;
+  }
+
+  .comments__title {
+    margin-left: -39px;
   }
 }

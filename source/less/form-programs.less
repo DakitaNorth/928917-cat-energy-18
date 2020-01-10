@@ -1,31 +1,7 @@
 .form-programs {
-  position: relative;
+  display: flex;
   padding-top: 25px;
   margin-bottom: 30px;
-}
-
-.form-programs::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -20px;
-  width: 320px;
-  height: 1px;
-  background-color: #e6e6e6;
-}
-
-.form-programs::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: -20px;
-  width: 320px;
-  height: 1px;
-  background-color: #e6e6e6;
-}
-
-.form-programs__wrapper {
-  margin-bottom: 25px;
 }
 
 .form-programs__radio {
@@ -34,21 +10,20 @@
 
 .form-program__label {
   position: relative;
+  display: inline-block;
   margin-left: 45px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .form-programs {
-    padding-top: 33px;
+    padding-top: 38px;
     margin-bottom: 75px;
     border: 1px solid #e6e6e6;
   }
 
   .form-program__label {
     margin-left: 85px;
-  }
-
-  .form-programs__wrapper {
     margin-bottom: 34px;
   }
 
@@ -64,6 +39,6 @@
 @media (min-width: @desktop-width) {
   .form-programs {
     width: 570px;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
   }
 }

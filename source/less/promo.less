@@ -21,6 +21,7 @@
 }
 
 .promo__container {
+  position: relative;
   border: 1px solid transparent;
 }
 
@@ -35,6 +36,12 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 25px;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -73,7 +80,7 @@
   .promo__image {
     position: absolute;
     z-index: -2;
-    bottom: -60px;
+    top: 250px;
     left: 30px;
     margin: 0;
   }
@@ -96,7 +103,7 @@
   }
 
   .promo__image {
-    top: 145px;
+    top: 20px;
     left: 560px;
     margin: 0;
   }

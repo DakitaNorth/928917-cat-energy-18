@@ -1,12 +1,16 @@
 .page-footer {
+  background-color: #f2f2f2;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 35px;
-  background-color: #f2f2f2;
 }
 
 .page-footer__title {
+  padding-top: 5px;
   margin-bottom: 28px;
 }
 
@@ -36,12 +40,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 57px;
-    padding-bottom: 58px;
+    padding-top: 43px;
+    padding-bottom: 43px;
   }
 
   .page-footer__wrapper {
@@ -62,8 +66,17 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer__container {
+    width: 1220px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__title {
+    padding-top: 10px;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 10px;
   }
 }

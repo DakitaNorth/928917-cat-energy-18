@@ -1,20 +1,30 @@
 .additional-goods__title {
-  position: relative;
-  margin-top: 28px;
-  margin-bottom: 35px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 22px;
+  margin-left: -20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: #ffffff;
 }
 
-.additional-goods__title::after {
+.additional-goods__title-wrapper {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+.additional-goods__title-wrapper::before {
   content: "";
   position: absolute;
-  width: 53px;
+  top: 50%;
+  right: 0;
+  width: 100vw;
   height: 3px;
-  top: 14px;
-  right: -20px;
+  margin-top: 7px;
   background-color: #68b738;
+  z-index: -1;
 }
 
 .additional-goods__list {
@@ -91,29 +101,21 @@
     text-align: right;
   }
 
+  .additional-goods__title-wrapper {
+    margin-top: -22px;
+    margin-bottom: 78px;
+  }
+
   .additional-goods__title {
     padding-left: 37px;
-    margin-top: 5px;
-    margin-bottom: 78px;
+    padding-right: 35px;
+    margin-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
-  .additional-goods__title::after {
-    width: 28px;
-    height: 3px;
-    top: 20px;
-    left: -30px;
-  }
-
-  .additional-goods__title::before {
-    content: "";
-    position: absolute;
-    width: 327px;
-    height: 3px;
-    top: 20px;
-    right: -30px;
-    background-color: #68b738;
+  .additional-goods__title-wrapper::before {
+    margin-top: 16px;
   }
 
   .additional-good__link {
@@ -125,26 +127,16 @@
   .additional-goods__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
+  }
+
+  .additional-goods__title-wrapper {
+    margin-top: -7px;
+    margin-bottom: 78px;
   }
 
   .additional-goods__title {
-    padding: 0;
-    margin-top: 15px;
-  }
-
-  .additional-goods__title::after {
-    width: 70px;
-    height: 3px;
-    top: 23px;
-    left: -110px;
-  }
-
-  .additional-goods__title::before {
-    width: 957px;
-    height: 3px;
-    top: 23px;
-    right: -110px;
+    margin-left: -37px;
   }
 
   .additional-goods__list {

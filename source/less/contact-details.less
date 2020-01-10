@@ -1,22 +1,33 @@
 .contact-details {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.contact-details__title-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 34px;
+  box-sizing: border-box;
 }
 
 .contact-details__title {
+  display: inline-block;
   width: 200px;
-  padding: 0;
-  margin-bottom: 35px;
+  padding-left: 37px;
+  margin-left: -39px;
+  background-color: #ffffff;
 }
 
-.contact-details__title::after {
+.contact-details__title-wrapper::before {
   content: "";
   position: absolute;
-  top: 15px;
-  right: -20px;
-  width: 99px;
+  top: 50%;
+  right: 0;
+  width: 100vw;
   height: 3px;
+  margin-top: -10px;
   background-color: #68b738;
+  z-index: -1;
 }
 
 .contact-details__wrapper {
@@ -32,28 +43,25 @@
 
 @media (min-width: @tablet-width) {
   .contact-details {
-    margin-bottom: 50px;
-  }
-
-  .contact-details__title::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: -70px;
-    width: 30px;
-    height: 3px;
-    background-color: #68b738;
-  }
-
-  .contact-details__title::after {
-    top: 22px;
-    right: -70px;
-    width: 150px;
-    height: 3px;
+    margin-bottom: 48px;
   }
 
   .contact-details__title {
-    width: 515px;
+    width: 512px;
+    padding-right: 40px;
+    margin-left: 0;
+  }
+
+  .contact-details__title-wrapper::before {
+    margin-top: 1px;
+  }
+
+  .contact-details__shell {
+    margin-left: 40px;
+    margin-right: 35px;
+  }
+
+  .contact-details__title-wrapper {
     margin-bottom: 73px;
   }
 
@@ -64,9 +72,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contact-details {
+    margin-bottom: 50px;
+  }
+
   .contact-details__shell {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .contact-details__wrapper {
@@ -74,20 +87,14 @@
   }
 
   .contact-details__title {
-    margin-bottom: 70px;
+    margin-left: -37px;
   }
 
-  .contact-details__title::before {
-    top: 18px;
-    left: -110px;
-    width: 70px;
-    height: 3px;
+  .contact-details__title-wrapper {
+    margin-bottom: 73px;
   }
 
-  .contact-details__title::after {
-    top: 18px;
-    right: -110px;
-    width: 776px;
-    height: 3px;
+  .contact-details__title-wrapper::before {
+    margin-top: 4px;
   }
 }

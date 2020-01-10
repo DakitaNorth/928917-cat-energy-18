@@ -1,12 +1,14 @@
-@media (min-width: 320px) {
-  .inner-page__header {
-    border-bottom: 1px solid #d9d9d9;
-  }
+.inner-page__header {
+  border-bottom: 1px solid #d9d9d9;
+}
 
-  .inner-page__contacts {
-    padding-top: 15px;
-    background-color: #f2f2f2;
-  }
+.inner-page__contacts {
+  padding-top: 15px;
+  background-color: #f2f2f2;
+}
+
+.inner-page .site-list__item--active::after {
+  background-color: #68b738;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,10 +23,22 @@
   .inner-page__title {
     margin-bottom: 57px;
   }
+
+  .inner-page__footer-container {
+    padding-top: 40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .inner-page__contacts {
     background-color: #ffffff;
+  }
+
+  .inner-page__header::after {
+    display: none;
+  }
+
+  .inner-page__link {
+    color: #000000;
   }
 }

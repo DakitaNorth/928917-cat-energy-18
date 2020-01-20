@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
-    <link href="fonts/oswaldregular.woff" rel="preload" as="font">
+    <script src="js/picturefill.js"></script>
   </head>
   <body class="inner-page">
     <div style="display:none">
@@ -70,12 +70,14 @@
               </div>
             </fieldset>
             <fieldset class="field-set form-programs">
-              <input class="form-programs__radio visually-hidden" type="radio" id="losing-weight" name="rdbtn" value="losing-weight" checked="">
-              <label class="form-program__label" for="losing-weight">Похудение</label>
-              <input class="form-programs__radio visually-hidden" type="radio" id="mass-set" name="rdbtn" value="mass-set">
-              <label class="form-program__label" for="mass-set">Набор массы</label>
-              <input class="form-programs__radio visually-hidden" type="radio" id="recommendation" name="rdbtn" value="recommendation">
-              <label class="form-program__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+              <div class="form-programs__wrapper">
+                <input class="form-programs__radio visually-hidden" type="radio" id="losing-weight" name="rdbtn" value="losing-weight" checked="">
+                <label class="form-program__label" for="losing-weight">Похудение</label>
+                <input class="form-programs__radio visually-hidden" type="radio" id="mass-set" name="rdbtn" value="mass-set">
+                <label class="form-program__label" for="mass-set">Набор массы</label>
+                <input class="form-programs__radio visually-hidden" type="radio" id="recommendation" name="rdbtn" value="recommendation">
+                <label class="form-program__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+              </div>
             </fieldset>
           </div>
           <fieldset class="field-set contact-details">
@@ -101,8 +103,8 @@
                 <span class="comments__title">Комментарий</span>
               </span>
             </label>
-            <div class="container">
-              <textarea class="comment__area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="container comments__container">
+              <textarea class="comments__area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
           <fieldset class="field-set form-additionally">

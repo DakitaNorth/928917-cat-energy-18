@@ -87,9 +87,46 @@
     margin-bottom: 50px;
   }
 
+  .instruction__title {
+    margin-bottom: 70px;
+  }
+
   .instruction__item {
+    position: relative;
     width: 245px;
     min-height: 0;
     margin-bottom: 0;
+  }
+
+  .instruction__item::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 50px;
+    width: 72px;
+    height: 335px;
+    background-image: url("../img/advantage-background-1.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .instruction__item--preparation::before {
+    right: 9px;
+    width: 114px;
+    background-image: url("../img/advantage-background-2.svg");
+  }
+
+  .instruction__item--convenience::before {
+    top: -10px;
+    right: 9px;
+    width: 115px;
+    background-image: url("../img/advantage-background-3.svg");
+  }
+
+  .instruction__item--result::before {
+    right: 0;
+    width: 123px;
+    background-image: url("../img/advantage-background-4.svg");
   }
 }

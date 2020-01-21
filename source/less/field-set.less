@@ -50,6 +50,21 @@
   border: 1px solid #e6e6e6;
 }
 
+.field-set__input:hover {
+  border-color: #cdcdcd;
+}
+
+.field-set__input:focus {
+  border-width: 2px;
+  border-color: #444444;
+  padding: 11px 0 11px 14px;
+  outline: none;
+}
+
+.field-set__input--required:focus {
+  border-color: #ff8282;
+}
+
 @media (min-width: @tablet-width) {
   .field-set {
     margin-bottom: 53px;
@@ -66,5 +81,9 @@
   .field-set legend {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .field-set__input:focus {
+    padding: 11px 0 11px 17px;
   }
 }

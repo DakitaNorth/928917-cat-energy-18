@@ -27,18 +27,8 @@
   color: #000000;
 }
 
-.site-list__link:hover,
-.site-list__link:focus {
-  opacity: 0.6;
-}
-
 .site-list__link:active {
   opacity: 0.4;
-}
-
-.site-list__link--active:hover,
-.site-list__link--active:focus {
-  opacity: 1;
 }
 
 .site-list__item--active {
@@ -76,6 +66,16 @@
 
   .site-list__item::before {
     display: none;
+  }
+
+  .site-list__link:hover,
+  .site-list__link:focus {
+    opacity: 0.6;
+  }
+
+  .site-list__link--active:hover,
+  .site-list__link--active:focus {
+    opacity: 1;
   }
 }
 

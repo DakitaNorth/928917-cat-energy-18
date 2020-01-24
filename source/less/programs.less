@@ -49,6 +49,7 @@
 
 .programs__link {
   position: relative;
+  padding-right: 20px;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
@@ -72,17 +73,21 @@
   transition: 0.3s;
 }
 
-.programs__link:hover::after,
-.programs__link:focus::after {
-  transform: translateX(-5px);
-}
-
 .programs__link:active {
   opacity: 0.3;
 }
 
 .programs__link:active::after {
   opacity: 0.3;
+}
+
+.programs__link:disabled {
+  opacity: 1;
+  cursor: disabled;
+}
+
+.programs__link:disabled::after {
+  opacity: 0.5;
 }
 
 .programs__link--pro::after {
@@ -163,7 +168,6 @@
   }
 
   .programs__link {
-    padding-right: 20px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -201,6 +205,11 @@
     left: 410px;
     width: 268px;
     height: 112px;
+  }
+
+  .programs__link:hover::after,
+  .programs__link:focus::after {
+    transform: translateX(-5px);
   }
 }
 

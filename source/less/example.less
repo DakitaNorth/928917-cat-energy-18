@@ -1,7 +1,14 @@
 .example {
   position: relative;
+  padding-bottom: 38px;
+  margin-bottom: 5px;
   background-color: #f2f2f2;
   border: 1px solid transparent;
+}
+
+.example__info {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__title {
@@ -50,22 +57,28 @@
   transform: translateY(-8px);
 }
 
-.example__info {
+.example__price {
   margin-top: 9px;
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.example__info span {
+.example__price span {
   display: inline-block;
 }
 
 @media (min-width: @tablet-width) {
   .example {
     padding-top: 35px;
+    margin-bottom: 30px;
     border-top: 1px solid #e6e6e6;
     background-color: transparent;
+  }
+
+  .example__info {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .example__title {
@@ -109,7 +122,7 @@
     width: 135px;
   }
 
-  .example__info {
+  .example__price {
     width: 175px;
     text-align: right;
     font-size: 20px;
@@ -124,17 +137,30 @@
 @media (min-width: @desktop-width) {
   .example {
     padding-top: 5px;
-    padding-bottom: 35px;
+    padding-bottom: 28px;
     border-top: 0;
+  }
+
+  .example__shell {
+    display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .example__info {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .example::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -36px;
     right: 0;
     width: 100%;
-    height: 72%;
+    height: 73%;
     background: linear-gradient(to right, #f2f2f2, #f2f2f2 72.5%, #eaeaea 72.5%, #eaeaea);
     z-index: -1;
   }
@@ -158,7 +184,7 @@
     margin-bottom: 33px;
   }
 
-  .example__info {
+  .example__price {
     display: flex;
     width: 100%;
   }

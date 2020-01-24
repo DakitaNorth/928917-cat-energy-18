@@ -22,14 +22,8 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="300" height="38" alt="Логотип проекта Кэт энерджи">
             </picture>
           </a>
-          <button class="page-header__button" type="button">
-            <svg class="icon-close-svg" viewBox="0 0 18 18">
-              <use class="icon-close" xlink:href="#icon-close" x="0" y="0"/>
-            </svg>
-            <svg class="icon-mobile-menu-svg" viewBox="0 0 18 18">
-              <use class="icon-mobile-menu" xlink:href="#icon-mobile-menu" x="0" y="0"/>
-            </svg>
-          </button>
+          <a class="page-header__button" href="#" aria-label="Открыть или закрыть меню">
+          </a>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
@@ -128,43 +122,62 @@
         </ul>
       </section>
       <section class="example">
-        <div class="container">
-          <h2 class="example__title title">Живой пример</h2>
-          <p class="example__text text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example__wrapper">
-            <div class="example__stats-list">
-              <div class="example__stats-item">
-                <b class="example__stats-value">5 кг</b>
-                <span class="example__stats-subtitle text">снижение веса</span>
-              </div>
-              <div class="example__stats-item">
-                <b class="example__stats-value">60 дней</b>
-                <span class="example__stats-subtitle example__stats-subtitle--time text">затрачено времени</span>
-              </div>
-            </div>
-            <p class="example__info">
-              <span>Затраты на питание:</span>
-              <span class="example__cost">15 000 руб.</span>
+        <div class="example__shell">
+          <div class="example__info">
+            <h2 class="example__title title">Живой пример</h2>
+            <p class="example__text text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
-          </div>
-          <div class="example__demo">
-            <div class="example__slider">
-              <div class="example__slide">
+            <div class="example__wrapper">
+              <div class="example__stats-list">
+                <div class="example__stats-item">
+                  <b class="example__stats-value">5 кг</b>
+                  <span class="example__stats-subtitle text">снижение веса</span>
+                </div>
+                <div class="example__stats-item">
+                  <b class="example__stats-value">60 дней</b>
+                  <span class="example__stats-subtitle example__stats-subtitle--time text">затрачено времени</span>
+                </div>
               </div>
-              <div class="example__slide">
+              <p class="example__price">
+                <span>Затраты на питание:</span>
+                <span class="example__cost">15 000 руб.</span>
+              </p>
+            </div>
+          </div>
+          <div class="example-demo">
+            <input class="visually-hidden product-1" id="product-1" type="radio" name="toggle" checked>
+            <input class="visually-hidden product-2" id="product-2" type="radio" name="toggle">
+            <div class="example-demo__wrapper">
+              <ul class="example-demo__slides">
+                <li class="example-demo__slide example-demo__slide--first">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                    <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Слайд с котиком">
+                  </picture>
+                </li>
+                <li class="example-demo__slide example-demo__slide--second">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                    <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Слайд с котиком">
+                  </picture>
+                </li>
+              </ul>
+              <div class="example-demo__controls">
+                <label class="example-demo__button example-demo__button--first" for="product-1">Было</label>
+                <label class="example-demo__button example-demo__button--second" for="product-2">Стало</label>
               </div>
             </div>
-            <div class="example__buttons">
-              <button class="example__button" type="button">
-              <div class="example__range">
-                <div class="example__bar"></div>
-              </div>
-              </button><button class="example__button" type="button">
-            </button></div>
           </div>
         </div>
       </section>
@@ -231,5 +244,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

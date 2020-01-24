@@ -3,12 +3,14 @@
   background-color: #68b738;
 }
 
-.button:hover,
-.button:focus {
-  color: #ffffff;
-  background-color: #5eaa2f;
-}
-
 .button:active {
   color: #99c684;
+}
+
+@media (min-width: @tablet-width) {
+  .button:hover,
+  .button:focus {
+    color: #ffffff;
+    background-color: #5eaa2f;
+  }
 }

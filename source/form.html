@@ -6,6 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
+    <link href="fonts/oswaldregular.woff" rel="preload" as="font">
     <script src="js/picturefill.js"></script>
   </head>
   <body class="inner-page">
@@ -67,11 +68,11 @@
             <fieldset class="field-set form-programs">
               <div class="form-programs__wrapper">
                 <input class="form-programs__radio visually-hidden" type="radio" id="losing-weight" name="rdbtn" value="losing-weight" checked="">
-                <label class="form-program__label" for="losing-weight">Похудение</label>
+                <label class="form-program__label" for="losing-weight" tabindex="0">Похудение</label>
                 <input class="form-programs__radio visually-hidden" type="radio" id="mass-set" name="rdbtn" value="mass-set">
-                <label class="form-program__label" for="mass-set">Набор массы</label>
+                <label class="form-program__label" for="mass-set" tabindex="0">Набор массы</label>
                 <input class="form-programs__radio visually-hidden" type="radio" id="recommendation" name="rdbtn" value="recommendation">
-                <label class="form-program__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+                <label class="form-program__label" for="recommendation" tabindex="0">Не знаю (Нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
@@ -111,19 +112,19 @@
             <div class="form-additionally__fields container">
               <div class="form-additionally__wrapper">
                 <input class="form-additionally__checkbox visually-hidden" type="checkbox" id="substitute" name="substitute" checked="">
-                <label class="form-additionally__label" for="substitute">Сахарозаменитель</label>
+                <label class="form-additionally__label" for="substitute" tabindex="0">Сахарозаменитель</label>
               </div>
               <div class="form-additionally__wrapper">
                 <input class="form-additionally__checkbox visually-hidden" type="checkbox" id="water" name="water">
-                <label class="form-additionally__label" for="water">Питьевая вода</label>
+                <label class="form-additionally__label" for="water" tabindex="0">Питьевая вода</label>
               </div>
               <div class="form-additionally__wrapper">
                 <input class="form-additionally__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
-                <label class="form-additionally__label" for="milk">Молоко</label>
+                <label class="form-additionally__label" for="milk" tabindex="0">Молоко</label>
               </div>
               <div class="form-additionally__wrapper">
                 <input class="form-additionally__checkbox visually-hidden" type="checkbox" id="vitamin" name="vitamin">
-                <label for="vitamin" class="form-additionally__label">Витамины</label>
+                <label for="vitamin" class="form-additionally__label" tabindex="0">Витамины</label>
               </div>
             </div>
           </fieldset>

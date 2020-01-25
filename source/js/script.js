@@ -4,6 +4,6 @@ var menu_button = document.querySelector(".page-header__button");
 
 popup_button.addEventListener("click",function(evt) {
     evt.preventDefault();
-    popup.classList.toggle("main_open");
+    popup.classList.toggle("main_close");
     menu_button.classList.toggle("page-header__button--close");
 });
